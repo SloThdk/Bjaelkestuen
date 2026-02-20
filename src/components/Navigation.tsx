@@ -96,9 +96,9 @@ export default function Navigation() {
         </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile menu — flows directly below header, no fixed positioning calc */}
       {isOpen && (
-        <div className="lg:hidden fixed top-[calc(74px+33px)] left-0 right-0 z-50 bg-[#0e130f] border-b border-forest-900/40 shadow-2xl">
+        <div className="lg:hidden bg-[#0e130f] border-b border-forest-900/40 shadow-2xl">
           <nav className="container mx-auto px-4 py-4 flex flex-col gap-1">
             {navLinks.map((link) => (
               <Link

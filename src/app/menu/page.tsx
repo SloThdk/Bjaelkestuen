@@ -25,12 +25,16 @@ export default function Menu() {
                 </div>
                 <div className="space-y-3">
                   {items.map(({ name, description, price }) => (
-                    <div key={name} className="flex items-start justify-between bg-stone-900 rounded-xl px-5 py-4 border border-stone-800 hover:border-forest-900/40 transition">
-                      <div>
-                        <p className="text-white font-semibold">{name}</p>
-                        {description && <p className="text-stone-400 text-sm mt-0.5">{description}</p>}
+                    <div key={name} className="flex items-start justify-between gap-3 bg-stone-900 rounded-xl px-5 py-4 border border-stone-800 hover:border-forest-900/40 transition">
+                      <div className="min-w-0 flex-1">
+                        <p className="text-white font-semibold leading-snug">{name}</p>
+                        {description && <p className="text-stone-400 text-sm mt-0.5 leading-relaxed">{description}</p>}
                       </div>
-                      {price && <span className="text-gold-400 font-bold text-[15px] shrink-0 ml-4 tabular-nums">{price}</span>}
+                      {price && (
+                        <span className="text-gold-400 font-bold text-[15px] shrink-0 tabular-nums pt-0.5">
+                          {price}
+                        </span>
+                      )}
                     </div>
                   ))}
                 </div>

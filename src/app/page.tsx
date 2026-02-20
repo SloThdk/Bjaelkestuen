@@ -53,19 +53,19 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Status card */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
-          <div className="flex items-center gap-6 bg-[#0e130f]/90 backdrop-blur border border-forest-900/50 rounded-2xl px-6 py-3 text-sm">
-            <div className="flex items-center gap-2">
-              <Clock size={14} className="text-forest-500" />
+        {/* Status card — responsive, won't overflow on small screens */}
+        <div className="absolute bottom-6 left-0 right-0 z-10 flex justify-center px-4">
+          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 bg-[#0e130f]/90 backdrop-blur border border-forest-900/50 rounded-2xl px-5 py-3 text-sm max-w-full">
+            <div className="flex items-center gap-1.5 whitespace-nowrap">
+              <Clock size={13} className="text-forest-500 shrink-0" />
               <span className="text-stone-400">I dag:</span>
               <span className={today.closed ? 'text-red-400 font-medium' : 'text-forest-400 font-medium'}>
                 {today.closed ? 'Lukket' : `${today.open}–${today.close}`}
               </span>
             </div>
-            <div className="w-px h-4 bg-forest-900" />
-            <a href={restaurant.mapsLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-stone-400 hover:text-forest-300 transition">
-              <MapPin size={14} className="text-forest-500" />
+            <div className="hidden sm:block w-px h-4 bg-forest-900" />
+            <a href={restaurant.mapsLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-stone-400 hover:text-forest-300 transition whitespace-nowrap">
+              <MapPin size={13} className="text-forest-500 shrink-0" />
               Bredgade 52
             </a>
           </div>
