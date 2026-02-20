@@ -35,20 +35,22 @@ export default function Kontakt() {
           {/* Contact grid */}
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
 
-            {/* Phone */}
-            <a
-              href={`tel:${restaurant.phone.replace(/\s/g,'')}`}
-              className="flex items-center gap-4 bg-stone-900 hover:bg-stone-800 transition rounded-xl p-6 border border-stone-800 group"
-            >
-              <div className="w-12 h-12 rounded-full bg-forest-600/10 flex items-center justify-center group-hover:bg-forest-600/20 transition shrink-0">
+            {/* Phone — just shows the number, no fake CTA */}
+            <div className="flex items-center gap-4 bg-stone-900 rounded-xl p-6 border border-stone-800">
+              <div className="w-12 h-12 rounded-full bg-forest-600/10 flex items-center justify-center shrink-0">
                 <Phone size={20} className="text-forest-400" />
               </div>
               <div>
                 <p className="text-stone-400 text-xs mb-1 uppercase tracking-wide">Telefon</p>
-                <p className="text-white font-bold text-lg">{restaurant.phone}</p>
-                <p className="text-forest-400 text-sm">Ring og book bord →</p>
+                <a
+                  href={`tel:${restaurant.phone.replace(/\s/g,'')}`}
+                  className="block text-white font-bold text-lg hover:text-forest-300 transition"
+                >
+                  {restaurant.phone}
+                </a>
+                <p className="text-stone-500 text-sm mt-0.5">Ring og book bord</p>
               </div>
-            </a>
+            </div>
 
             {/* Address — opens Google Maps in new tab */}
             <a
