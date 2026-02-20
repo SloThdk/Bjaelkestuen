@@ -4,12 +4,12 @@ import Image from 'next/image'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const slides = [
-  { src: '/images/interior-2.jpg', alt: 'Fuldt hus og hyggelig stemning' },
-  { src: '/images/event-2.jpg',    alt: 'Gæster fejrer hos Bjælkestuen' },
-  { src: '/images/interior-3.jpg', alt: 'Det smukke interiør' },
-  { src: '/images/event-1.jpg',    alt: 'Godt humør og gode oplevelser' },
-  { src: '/images/interior-4.jpg', alt: 'Hyggeligt selskabslokale' },
-  { src: '/images/interior-5.jpg', alt: 'Bjælkestuen — Nørre Nebel' },
+  { src: '/images/interior-2.jpg', alt: 'Fuldt hus og hyggelig stemning',    pos: 'center' },
+  { src: '/images/event-2.jpg',    alt: 'Gæster fejrer hos Bjælkestuen',    pos: 'top' },
+  { src: '/images/interior-3.jpg', alt: 'Det smukke interiør',              pos: 'center' },
+  { src: '/images/event-1.jpg',    alt: 'Godt humør og gode oplevelser',    pos: 'top' },
+  { src: '/images/interior-4.jpg', alt: 'Hyggeligt selskabslokale',         pos: 'center' },
+  { src: '/images/interior-5.jpg', alt: 'Bjælkestuen — Nørre Nebel',       pos: 'center' },
 ]
 
 export default function Slideshow() {
@@ -42,7 +42,8 @@ export default function Slideshow() {
             src={slide.src}
             alt={slide.alt}
             fill
-            className="object-cover object-center"
+            className="object-cover"
+            style={{ objectPosition: slide.pos }}
             sizes="(max-width: 768px) 100vw, 50vw"
           />
         </div>
