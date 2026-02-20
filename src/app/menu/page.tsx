@@ -35,7 +35,7 @@ export default function Menu() {
                           </div>
                           {price && (
                             <span className="text-gold-400 font-bold text-[15px] shrink-0 tabular-nums pt-0.5">
-                              {price}
+                              {price} kr
                             </span>
                           )}
                         </div>
