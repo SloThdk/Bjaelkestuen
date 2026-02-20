@@ -36,13 +36,13 @@ export default function Home() {
             Hjemlig stemning, imødekommende personale og rigtig god mad. Midt i hjertet af Nørre Nebel.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href={`tel:${restaurant.phone.replace(/\s/g,'')}`}
+            <Link
+              href="/kontakt"
               className="flex items-center justify-center gap-2 bg-forest-700 hover:bg-forest-600 text-white text-lg font-semibold px-8 py-4 rounded-xl transition shadow-lg shadow-forest-950/50"
             >
               <Phone size={20} />
               Ring og book bord
-            </a>
+            </Link>
             <Link
               href="/menu"
               className="flex items-center justify-center gap-2 bg-white/8 hover:bg-white/15 text-white text-lg font-semibold px-8 py-4 rounded-xl transition border border-white/15"
@@ -183,13 +183,13 @@ export default function Home() {
           <h2 className="font-playfair text-4xl text-white mb-4">Klar til et godt måltid?</h2>
           <p className="text-stone-400 text-lg mb-8">Ring til os og book dit bord — eller kig forbi, vi byder altid på et smil.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href={`tel:${restaurant.phone.replace(/\s/g,'')}`}
+            <Link
+              href="/kontakt"
               className="flex items-center justify-center gap-2 bg-forest-700 hover:bg-forest-600 text-white text-lg font-semibold px-8 py-4 rounded-xl transition"
             >
               <Phone size={20} />
-              {restaurant.phone}
-            </a>
+              Ring og book bord
+            </Link>
             <Link
               href="/kontakt"
               className="flex items-center justify-center gap-2 bg-[#0e130f] hover:bg-forest-950 text-white text-lg font-semibold px-8 py-4 rounded-xl transition border border-forest-900/50"
