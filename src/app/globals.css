@@ -27,6 +27,23 @@ html, body {
   scroll-behavior: smooth;
 }
 
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.hero-badge   { animation: fadeUp 0.6s ease-out 0.1s both; }
+.hero-title   { animation: fadeUp 0.7s ease-out 0.25s both; }
+.hero-sub     { animation: fadeUp 0.6s ease-out 0.4s both; }
+.hero-body    { animation: fadeUp 0.6s ease-out 0.5s both; }
+.hero-buttons { animation: fadeUp 0.6s ease-out 0.65s both; }
+.hero-status  { animation: fadeIn 0.8s ease-out 0.9s both; }
+
 button, a[href], select, [role="button"], [tabindex="0"] {
   cursor: pointer;
 }
