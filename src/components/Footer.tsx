@@ -51,7 +51,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/kontakt"
-                  className="flex items-center gap-3 text-stone-400 hover:text-forest-300 transition text-[14px]"
+                  className="inline-flex items-center gap-1.5 text-forest-400 hover:text-forest-300 underline underline-offset-2 decoration-forest-700 hover:decoration-forest-400 transition text-[14px]"
                 >
                   Se kort og rutevejledning →
                 </Link>
