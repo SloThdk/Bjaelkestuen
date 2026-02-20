@@ -30,7 +30,7 @@ export default function Menu() {
                         <p className="text-white font-semibold">{name}</p>
                         {description && <p className="text-stone-400 text-sm mt-0.5">{description}</p>}
                       </div>
-                      {price && <span className="text-forest-400 font-semibold text-sm shrink-0 ml-4">{price}</span>}
+                      {price && <span className="text-gold-400 font-bold text-[15px] shrink-0 ml-4 tabular-nums">{price}</span>}
                     </div>
                   ))}
                 </div>
