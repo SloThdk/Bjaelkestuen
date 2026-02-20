@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Phone, MapPin, Clock, Facebook } from 'lucide-react'
+import { Phone, MapPin, Clock, Facebook, ExternalLink } from 'lucide-react'
 import { restaurant, hours } from '@/lib/data'
 
 export default function Footer() {
@@ -49,12 +49,15 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <Link
-                  href="/kontakt"
+                <a
+                  href={restaurant.mapsLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-forest-400 hover:text-forest-300 underline underline-offset-2 decoration-forest-700 hover:decoration-forest-400 transition text-[14px]"
                 >
-                  Se kort og rutevejledning →
-                </Link>
+                  Se kort og rutevejledning
+                  <ExternalLink size={12} />
+                </a>
               </li>
             </ul>
           </div>
