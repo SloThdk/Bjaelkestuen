@@ -8,23 +8,29 @@ export default function Kontakt() {
     <>
       <div className="bg-[#0a0f0b]">
 
-        {/* Hero — exterior photo so people recognise the building */}
-        <div className="relative h-72 sm:h-80 overflow-hidden">
-          <Image
-            src="/images/exterior.jpg"
-            alt="Bjælkestuen — Bredgade 52, Nørre Nebel"
-            fill
-            className="object-cover object-top"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0a0f0b]/30 via-[#0a0f0b]/40 to-[#0a0f0b]" />
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-center w-full px-4">
-            <p className="text-forest-300 text-sm uppercase tracking-[0.2em] mb-1 font-semibold">Bjælkestuen</p>
-            <h1 className="font-playfair text-4xl sm:text-5xl text-white">Find os</h1>
-          </div>
-        </div>
-
         <div className="container mx-auto px-4 max-w-4xl py-12">
+
+          {/* Header */}
+          <div className="text-center mb-10">
+            <p className="text-forest-500 text-xs uppercase tracking-[0.2em] mb-2 font-semibold">Bjælkestuen</p>
+            <h1 className="font-playfair text-4xl sm:text-5xl text-white mb-2">Find os</h1>
+            <p className="text-stone-400">Vi glæder os til at se dig</p>
+          </div>
+
+          {/* Exterior photo — full image, no cropping */}
+          <div className="relative w-full rounded-2xl overflow-hidden border border-stone-800 mb-8">
+            <Image
+              src="/images/exterior.jpg"
+              alt="Bjælkestuen — Bredgade 52, Nørre Nebel"
+              width={900}
+              height={500}
+              className="w-full h-auto"
+              priority
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0a0f0b]/80 to-transparent px-6 py-4">
+              <p className="text-white font-semibold">{restaurant.address}</p>
+            </div>
+          </div>
 
           {/* Contact grid */}
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
