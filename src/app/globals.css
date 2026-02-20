@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+@theme {
+  --color-forest-50:  #f2f7f2;
+  --color-forest-100: #deeede;
+  --color-forest-200: #beddbe;
+  --color-forest-300: #93c493;
+  --color-forest-400: #6aab6e;
+  --color-forest-500: #4d8f52;
+  --color-forest-600: #3a7040;
+  --color-forest-700: #2d5533;
+  --color-forest-800: #1e3822;
+  --color-forest-900: #122016;
+  --color-forest-950: #0a1409;
+
+  --font-playfair: 'Playfair Display', serif;
+}
+
 html, body {
   overflow-x: hidden;
   max-width: 100%;

@@ -5,11 +5,11 @@ import { restaurant } from '@/lib/data'
 export default function Selskaber() {
   return (
     <>
-      <div className="bg-stone-950 py-16">
+      <div className="bg-[#0a0f0b] py-16">
         <div className="container mx-auto px-4 max-w-4xl">
 
           <div className="text-center mb-14">
-            <p className="text-amber-500 text-sm uppercase tracking-widest mb-2 font-semibold">Bjælkestuen</p>
+            <p className="text-forest-500 text-sm uppercase tracking-widest mb-2 font-semibold">Bjælkestuen</p>
             <h1 className="font-playfair text-4xl sm:text-5xl text-white mb-4">Fester & Selskaber</h1>
             <p className="text-stone-400 max-w-xl mx-auto text-lg">
               Vi har et hyggeligt selskabslokale med plads til op til 60 gæster. Vi holder gerne festen for dig.
@@ -17,11 +17,11 @@ export default function Selskaber() {
           </div>
 
           {/* Big capacity card */}
-          <div className="bg-gradient-to-br from-amber-800/20 to-stone-900 border border-amber-800/30 rounded-2xl p-8 text-center mb-8">
-            <div className="w-16 h-16 rounded-full bg-amber-600/20 flex items-center justify-center mx-auto mb-4">
-              <Users size={30} className="text-amber-400" />
+          <div className="bg-gradient-to-br from-forest-800/20 to-stone-900 border border-forest-800/30 rounded-2xl p-8 text-center mb-8">
+            <div className="w-16 h-16 rounded-full bg-forest-600/20 flex items-center justify-center mx-auto mb-4">
+              <Users size={30} className="text-forest-400" />
             </div>
-            <p className="font-playfair text-6xl font-bold text-amber-400 mb-2">60</p>
+            <p className="font-playfair text-6xl font-bold text-forest-400 mb-2">60</p>
             <p className="text-white text-xl font-semibold">gæster i selskabslokalet</p>
             <p className="text-stone-400 mt-2">Perfekt til alle typer fester og sammenkomster</p>
           </div>
@@ -39,7 +39,7 @@ export default function Selskaber() {
               'Foreningsarrangementer',
             ].map((occasion) => (
               <div key={occasion} className="flex items-center gap-3 bg-stone-900 rounded-xl px-5 py-3.5 border border-stone-800">
-                <CheckCircle size={16} className="text-amber-500 shrink-0" />
+                <CheckCircle size={16} className="text-forest-500 shrink-0" />
                 <span className="text-stone-200">{occasion}</span>
               </div>
             ))}
@@ -55,8 +55,8 @@ export default function Selskaber() {
                 { icon: Music, title: 'Jeres fest', desc: 'Vi sørger for rammerne — I sørger for stemningen' },
               ].map(({ icon: Icon, title, desc }) => (
                 <div key={title} className="text-center">
-                  <div className="w-12 h-12 rounded-full bg-amber-600/10 flex items-center justify-center mx-auto mb-3">
-                    <Icon size={20} className="text-amber-500" />
+                  <div className="w-12 h-12 rounded-full bg-forest-600/10 flex items-center justify-center mx-auto mb-3">
+                    <Icon size={20} className="text-forest-500" />
                   </div>
                   <p className="text-white font-semibold mb-1">{title}</p>
                   <p className="text-stone-400 text-sm">{desc}</p>
@@ -72,7 +72,7 @@ export default function Selskaber() {
             </p>
             <a
               href={`tel:${restaurant.phone.replace(/\s/g,'')}`}
-              className="inline-flex items-center gap-2 bg-amber-600 hover:bg-amber-500 text-white text-lg font-semibold px-8 py-4 rounded-xl transition"
+              className="inline-flex items-center gap-2 bg-forest-600 hover:bg-forest-500 text-white text-lg font-semibold px-8 py-4 rounded-xl transition"
             >
               <Phone size={20} />
               Ring til os — {restaurant.phone}

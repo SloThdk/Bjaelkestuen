@@ -5,11 +5,11 @@ import { restaurant, hours } from '@/lib/data'
 export default function Kontakt() {
   return (
     <>
-      <div className="bg-stone-950 py-16">
+      <div className="bg-[#0a0f0b] py-16">
         <div className="container mx-auto px-4 max-w-4xl">
 
           <div className="text-center mb-12">
-            <p className="text-amber-500 text-sm uppercase tracking-widest mb-2 font-semibold">Bjælkestuen</p>
+            <p className="text-forest-500 text-sm uppercase tracking-widest mb-2 font-semibold">Bjælkestuen</p>
             <h1 className="font-playfair text-4xl sm:text-5xl text-white mb-4">Find os</h1>
             <p className="text-stone-400">Vi glæder os til at se dig</p>
           </div>
@@ -20,8 +20,8 @@ export default function Kontakt() {
               href={`tel:${restaurant.phone.replace(/\s/g,'')}`}
               className="flex items-center gap-4 bg-stone-900 hover:bg-stone-800 transition rounded-xl p-6 border border-stone-800 group"
             >
-              <div className="w-12 h-12 rounded-full bg-amber-600/10 flex items-center justify-center group-hover:bg-amber-600/20 transition shrink-0">
-                <Phone size={20} className="text-amber-500" />
+              <div className="w-12 h-12 rounded-full bg-forest-600/10 flex items-center justify-center group-hover:bg-forest-600/20 transition shrink-0">
+                <Phone size={20} className="text-forest-500" />
               </div>
               <div>
                 <p className="text-stone-400 text-xs mb-1 uppercase tracking-wide">Telefon</p>
@@ -36,8 +36,8 @@ export default function Kontakt() {
               rel="noopener noreferrer"
               className="flex items-center gap-4 bg-stone-900 hover:bg-stone-800 transition rounded-xl p-6 border border-stone-800 group"
             >
-              <div className="w-12 h-12 rounded-full bg-amber-600/10 flex items-center justify-center group-hover:bg-amber-600/20 transition shrink-0">
-                <MapPin size={20} className="text-amber-500" />
+              <div className="w-12 h-12 rounded-full bg-forest-600/10 flex items-center justify-center group-hover:bg-forest-600/20 transition shrink-0">
+                <MapPin size={20} className="text-forest-500" />
               </div>
               <div>
                 <p className="text-stone-400 text-xs mb-1 uppercase tracking-wide">Adresse</p>
@@ -54,8 +54,8 @@ export default function Kontakt() {
               rel="noopener noreferrer"
               className="flex items-center gap-4 bg-stone-900 hover:bg-stone-800 transition rounded-xl p-6 border border-stone-800 group"
             >
-              <div className="w-12 h-12 rounded-full bg-amber-600/10 flex items-center justify-center group-hover:bg-amber-600/20 transition shrink-0">
-                <Facebook size={20} className="text-amber-500" />
+              <div className="w-12 h-12 rounded-full bg-forest-600/10 flex items-center justify-center group-hover:bg-forest-600/20 transition shrink-0">
+                <Facebook size={20} className="text-forest-500" />
               </div>
               <div>
                 <p className="text-stone-400 text-xs mb-1 uppercase tracking-wide">Facebook</p>
@@ -65,8 +65,8 @@ export default function Kontakt() {
             </a>
 
             <div className="flex items-start gap-4 bg-stone-900 rounded-xl p-6 border border-stone-800">
-              <div className="w-12 h-12 rounded-full bg-amber-600/10 flex items-center justify-center shrink-0">
-                <Clock size={20} className="text-amber-500" />
+              <div className="w-12 h-12 rounded-full bg-forest-600/10 flex items-center justify-center shrink-0">
+                <Clock size={20} className="text-forest-500" />
               </div>
               <div className="w-full">
                 <p className="text-stone-400 text-xs mb-2 uppercase tracking-wide">Åbningstider</p>
@@ -74,7 +74,7 @@ export default function Kontakt() {
                   {hours.map(({ day, open, close, closed }) => (
                     <div key={day} className="flex justify-between text-sm">
                       <span className="text-stone-400">{day}</span>
-                      <span className={closed ? 'text-red-400' : 'text-amber-400 font-medium'}>
+                      <span className={closed ? 'text-red-400' : 'text-forest-400 font-medium'}>
                         {closed ? 'Lukket' : `${open}–${close}`}
                       </span>
                     </div>
