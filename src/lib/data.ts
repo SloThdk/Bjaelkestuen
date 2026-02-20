@@ -1,0 +1,100 @@
+export const restaurant = {
+  name: 'Bjælkestuen',
+  tagline: 'Stedet man mødes igen og igen',
+  description:
+    'Centralt placeret på Bredgade i Nørre Nebel finder du Bjælkestuen — en hyggelig restaurant med imødekommende betjening og rimelige priser. Her føler du dig straks hjemme.',
+  address: 'Bredgade 52, 6830 Nørre Nebel',
+  phone: '75 28 87 72',
+  facebook: 'https://www.facebook.com/profile.php?id=100087998032298',
+  owners: ['Tina Bøjsen', 'Susan Thisted Knudsen'],
+  capacity: 60,
+  features: ['Takeaway', 'Selskabslokale (60 gæster)', 'Bordreservation', 'Livmusik', 'Hyggelig stemning'],
+  mapUrl: 'https://maps.google.com/maps?q=Bredgade+52,+6830+N%C3%B8rre+Nebel&output=embed&z=15',
+  mapsLink: 'https://www.google.dk/maps/place/Bredgade+52,+6830+Nørre+Nebel',
+}
+
+export const hours = [
+  { day: 'Mandag',  open: '11:30', close: '21:00', closed: false },
+  { day: 'Tirsdag', open: '',      close: '',       closed: true  },
+  { day: 'Onsdag',  open: '11:30', close: '21:00', closed: false },
+  { day: 'Torsdag', open: '11:30', close: '21:00', closed: false },
+  { day: 'Fredag',  open: '11:30', close: '21:30', closed: false },
+  { day: 'Lørdag',  open: '11:30', close: '21:30', closed: false },
+  { day: 'Søndag',  open: '12:00', close: '21:00', closed: false },
+]
+
+export const menu = [
+  {
+    category: 'Lette Retter',
+    items: [
+      { name: 'Stjerneskud', description: 'Ristet franskbrød m/ 2 stegte rødspættefileter, rejer og dressing', price: '125,-' },
+      { name: 'Indbagte kæmperejer', description: 'M/ salat, dressing, kuvertbrød og smør', price: '85,-' },
+      { name: 'Rejecocktail', description: 'M/ kuvertbrød og smør', price: '75,-' },
+      { name: '2 panerede rødspættefileter', description: 'M/ pommes frites, remoulade og citron', price: '95,-' },
+      { name: 'Grøn salat', description: '1 portion m/ kuvertbrød og smør', price: '55,-' },
+      { name: 'Ciabattabrød med hvidløgssmør', description: '', price: '35,-' },
+    ],
+  },
+  {
+    category: 'Hovedretter',
+    items: [
+      { name: 'Wienerschnitzel', description: 'Af skinkekød m/ brasede kartofler, ærter og smørsauce', price: '145,-' },
+      { name: 'Schnitzel "Toscana"', description: 'M/ salat, friterede kartofler og kryddersmør', price: '115,-' },
+      { name: 'Kyllingeschnitzel 220g', description: 'M/ salat og pommes frites', price: '135,-' },
+      { name: 'Herregårdsbøf 200g', description: 'M/ salat, friterede kartofler, bearnaisesauce, kuvertbrød og smør', price: '145,-' },
+      { name: '2 stk. kalkunschnitzel', description: 'M/ ristede champignon, salat, friterede kartofler og kryddersmør', price: '125,-' },
+      { name: 'Pulled pork salat', description: 'M/ marineret pulled pork, salat, sprød bacon, dressing, kuvertbrød og smør', price: '115,-' },
+      { name: 'Kyllingesalat', description: 'M/ marineret kyllingfilet, salat, sprød bacon, dressing, kuvertbrød og smør', price: '115,-' },
+      { name: '2 stk. marineret kyllingfilet', description: 'M/ salat, friterede kartofler og kryddersmør', price: '125,-' },
+      { name: 'Biksemad', description: 'M/ 2 spejlæg og rødbeder', price: '110,-' },
+      { name: 'Oksesteak 200g m/ pebersauce', description: 'M/ salat og krydrede kartoffelbåde', price: '225,-' },
+      { name: 'Oksesteak 200g m/ bearnaise', description: 'M/ salat og krydrede kartoffelbåde', price: '225,-' },
+      { name: 'Oksesteak 200g m/ hvidløgssmør', description: 'M/ salat og pommes frites', price: '225,-' },
+    ],
+  },
+  {
+    category: 'Grillretter',
+    items: [
+      { name: '½ grillstegt kylling', description: 'M/ salat og pommes frites', price: '105,-' },
+      { name: '¼ grillstegt kylling', description: 'M/ pommes frites og agurkesalat', price: '95,-' },
+      { name: '6 stk. chicken nuggets', description: 'M/ salat og pommes frites', price: '85,-' },
+      { name: '5 stk. vegan nuggets', description: 'M/ salat og pommes frites', price: '85,-' },
+      { name: 'Karrypølse', description: 'M/ pommes frites', price: '75,-' },
+      { name: 'Snack kurv', description: 'M/ cheese bites, onion rings, krydrede kartoffelbåde, relish og salat mayonnaise', price: '75,-' },
+      { name: 'Pølsemix', description: 'M/ karryketchup og rå løg', price: '75,-' },
+      { name: 'Kebabmix', description: 'M/ majs, salat og dressing', price: '75,-' },
+      { name: 'Kyllingemix', description: 'M/ majs, salat og dressing', price: '75,-' },
+      { name: 'Børnemenu', description: '4 chickennuggets med pommes frites', price: '65,-' },
+    ],
+  },
+  {
+    category: 'Burgere & Pita',
+    items: [
+      { name: 'Jumboburger', description: 'Rustik bolle m/ 2 grillstegte bøffer, løgringe, tomater, burgeragurker, salat, thousand island dressing og mayonnaise', price: '85,-' },
+      { name: 'Bigburger', description: 'Rustik bolle m/ 1 grillstegt bøf, løgringe, tomater, burgeragurker, salat, thousand island dressing og mayonnaise', price: '75,-' },
+      { name: 'Juniorburger', description: 'Sesambolle m/ 1 grillstegt bøf, løgringe, tomater, burgeragurker, salat, thousand island dressing og mayonnaise', price: '50,-' },
+      { name: 'Cheeseburger', description: 'Rustik bolle m/ 1 grillstegt bøf, smeltet emmentaler, løgringe, tomater, burgeragurker, salat, thousand island dressing og mayonnaise', price: '80,-' },
+      { name: 'Bacon/Cheeseburger ★', description: 'Rustik bolle m/ 1 grillstegt bøf, smeltet emmentaler, sprød bacon, løgringe, tomater, burgeragurker, salat, thousand island dressing og mayonnaise', price: '85,-' },
+      { name: 'Luksus kyllingeburger', description: 'Rustik bolle m/ marineret kyllingfilet og sprød bacon, tomat, agurk, salat og mayonnaise', price: '115,-' },
+      { name: 'Chickenburger', description: 'Rustik bolle m/ crispy paneret kyllingestykke, tomat, burgeragurker, revet gulerod, salat og mayonnaise', price: '70,-' },
+      { name: 'Fiskeburger', description: 'Rustik bolle m/ paneret rødspættefilet, tomat, agurk, salat, dressing og mayonnaise', price: '70,-' },
+      { name: 'Pulled pork burger', description: 'Rustik bolle m/ marineret pulled pork og sprød bacon, tomat, agurk, revet gulerod, salat og mayonaise', price: '115,-' },
+      { name: 'Bøfsandwich', description: 'Rustik bolle m/ 1 grillstegt bøf, rødbeder, sennep, ketchup, remoulade, rå/ristede løg, agurkesalat og relish (+15,- med brun sauce)', price: '75,-' },
+      { name: 'Pitabrød med kebab', description: 'Salat, agurk, majs, ærter, tomat, gulerødder og crème fraiche dressing', price: '70,-' },
+      { name: 'Pitabrød med kylling', description: 'Salat, agurk, majs, ærter, tomat, gulerødder og crème fraiche dressing', price: '70,-' },
+    ],
+  },
+  {
+    category: 'Pølser & Pommes Frites',
+    items: [
+      { name: 'Frankfurter', description: '', price: '35,-' },
+      { name: 'Ristet pølse', description: '', price: '22,-' },
+      { name: 'Rød pølse', description: '', price: '22,-' },
+      { name: 'Pølsebrød', description: '', price: '8,-' },
+      { name: 'Ristet hotdog', description: '', price: '32,-' },
+      { name: 'Rød hotdog', description: '', price: '32,-' },
+      { name: 'Lille pommes frites', description: '', price: '35,-' },
+      { name: 'Stor pommes frites', description: '', price: '45,-' },
+    ],
+  },
+]
