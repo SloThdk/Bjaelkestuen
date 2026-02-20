@@ -23,8 +23,8 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#0a0f0b]/75 via-[#0a0f0b]/60 to-[#0a0f0b]" />
 
         <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
-          <div className="hero-badge inline-flex items-center gap-2 bg-forest-900/40 border border-forest-700/30 rounded-full px-4 py-1.5 text-forest-300 text-sm mb-6">
-            <Star size={13} fill="currentColor" />
+          <div className="hero-badge inline-flex items-center gap-2 bg-[#2c1a08]/70 border border-[#9a7d50]/30 rounded-md px-4 py-1.5 text-[#d4b07a] text-sm mb-6">
+            <Star size={12} fill="currentColor" />
             Hyggelig restaurant siden 1990&apos;erne
           </div>
           <h1 className="hero-title font-playfair text-5xl sm:text-6xl md:text-7xl font-bold text-white mb-4 leading-tight">
@@ -39,10 +39,10 @@ export default function Home() {
           <div className="hero-buttons flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href={`tel:${restaurant.phone.replace(/\s/g,'')}`}
-              className="flex items-center justify-center gap-2 bg-forest-700 text-white text-lg font-semibold px-8 py-4 rounded-xl shadow-lg shadow-forest-950/50"
+              className="flex items-center justify-center gap-2 bg-forest-700 hover:bg-forest-600 text-white text-lg font-semibold px-8 py-4 rounded-xl shadow-lg shadow-forest-950/50 transition"
             >
               <Phone size={20} />
-              Ring og book bord
+              {restaurant.phone}
             </a>
             <Link
               href="/menu"
@@ -199,7 +199,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href={`tel:${restaurant.phone.replace(/\s/g,'')}`}
-                className="flex items-center justify-center gap-2 bg-forest-700 text-white text-lg font-semibold px-8 py-4 rounded-xl"
+                className="flex items-center justify-center gap-2 bg-forest-700 hover:bg-forest-600 text-white text-lg font-semibold px-8 py-4 rounded-xl transition"
               >
                 <Phone size={20} />
                 Ring og book bord
