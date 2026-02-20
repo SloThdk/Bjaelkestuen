@@ -1,7 +1,15 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import { Phone, MapPin, Clock, Facebook, Navigation, ExternalLink } from 'lucide-react'
 import Footer from '@/components/Footer'
 import { restaurant, hours } from '@/lib/data'
+
+export const metadata: Metadata = {
+  title: 'Find os & Kontakt',
+  description: 'Find Bjælkestuen på Bredgade 52, 6830 Nørre Nebel. Ring på 75 28 87 72 — vi tager reservationer og takeaway-bestillinger.',
+  alternates: { canonical: 'https://bjaelkestuen-demo.pages.dev/kontakt' },
+  openGraph: { url: 'https://bjaelkestuen-demo.pages.dev/kontakt' },
+}
 
 export default function Kontakt() {
   return (

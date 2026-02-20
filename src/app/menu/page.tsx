@@ -1,5 +1,13 @@
+import type { Metadata } from 'next'
 import { Phone } from 'lucide-react'
 import Footer from '@/components/Footer'
+
+export const metadata: Metadata = {
+  title: 'Menukort',
+  description: 'Se Bjælkestuen\'s fulde menukort — lette retter, hovedretter, grillretter, burgere og meget mere. Klassisk dansk mad i Nørre Nebel.',
+  alternates: { canonical: 'https://bjaelkestuen-demo.pages.dev/menu' },
+  openGraph: { url: 'https://bjaelkestuen-demo.pages.dev/menu' },
+}
 import Reveal from '@/components/Reveal'
 import { menu, restaurant } from '@/lib/data'
 

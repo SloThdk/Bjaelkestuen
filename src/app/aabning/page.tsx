@@ -1,6 +1,14 @@
+import type { Metadata } from 'next'
 import { Clock, Phone, MapPin, Navigation } from 'lucide-react'
 import Footer from '@/components/Footer'
 import { hours, restaurant } from '@/lib/data'
+
+export const metadata: Metadata = {
+  title: 'Åbningstider',
+  description: 'Se Bjælkestuen\'s åbningstider. Åben mandag og onsdag–søndag fra 11:30. Lukket tirsdag. Bredgade 52, Nørre Nebel.',
+  alternates: { canonical: 'https://bjaelkestuen-demo.pages.dev/aabning' },
+  openGraph: { url: 'https://bjaelkestuen-demo.pages.dev/aabning' },
+}
 
 export default function Aabning() {
   return (

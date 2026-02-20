@@ -1,8 +1,16 @@
+import type { Metadata } from 'next'
 import { Phone, Users, UtensilsCrossed, Music, CheckCircle } from 'lucide-react'
 import Footer from '@/components/Footer'
 import Reveal from '@/components/Reveal'
 import Slideshow from '@/components/Slideshow'
 import { restaurant } from '@/lib/data'
+
+export const metadata: Metadata = {
+  title: 'Selskaber & Fester',
+  description: 'Hold festen hos Bjælkestuen — selskabslokale til op til 60 gæster. Perfekt til fødselsdage, jubilæer og firmafester i Nørre Nebel.',
+  alternates: { canonical: 'https://bjaelkestuen-demo.pages.dev/selskaber' },
+  openGraph: { url: 'https://bjaelkestuen-demo.pages.dev/selskaber' },
+}
 
 export default function Selskaber() {
   return (

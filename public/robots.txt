@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bjaelkestuen-demo.pages.dev/sitemap.xml
