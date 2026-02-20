@@ -74,7 +74,7 @@ export const menu = [
       { name: 'Bigburger', description: 'Rustik bolle m/ 1 grillstegt bøf, løgringe, tomater, burgeragurker, salat, thousand island dressing og mayonnaise', price: '75,-' },
       { name: 'Juniorburger', description: 'Sesambolle m/ 1 grillstegt bøf, løgringe, tomater, burgeragurker, salat, thousand island dressing og mayonnaise', price: '50,-' },
       { name: 'Cheeseburger', description: 'Rustik bolle m/ 1 grillstegt bøf, smeltet emmentaler, løgringe, tomater, burgeragurker, salat, thousand island dressing og mayonnaise', price: '80,-' },
-      { name: 'Bacon/Cheeseburger ★', description: 'Rustik bolle m/ 1 grillstegt bøf, smeltet emmentaler, sprød bacon, løgringe, tomater, burgeragurker, salat, thousand island dressing og mayonnaise', price: '85,-' },
+      { name: 'Bacon/Cheeseburger', description: 'Rustik bolle m/ 1 grillstegt bøf, smeltet emmentaler, sprød bacon, løgringe, tomater, burgeragurker, salat, thousand island dressing og mayonnaise', price: '85,-' },
       { name: 'Luksus kyllingeburger', description: 'Rustik bolle m/ marineret kyllingfilet og sprød bacon, tomat, agurk, salat og mayonnaise', price: '115,-' },
       { name: 'Chickenburger', description: 'Rustik bolle m/ crispy paneret kyllingestykke, tomat, burgeragurker, revet gulerod, salat og mayonnaise', price: '70,-' },
       { name: 'Fiskeburger', description: 'Rustik bolle m/ paneret rødspættefilet, tomat, agurk, salat, dressing og mayonnaise', price: '70,-' },
