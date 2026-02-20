@@ -21,7 +21,7 @@ export default function Slideshow() {
 
   useEffect(() => {
     if (paused) return
-    const t = setInterval(next, 4500)
+    const t = setInterval(next, 3000)
     return () => clearInterval(t)
   }, [paused, next])
 
@@ -35,7 +35,7 @@ export default function Slideshow() {
       {slides.map((slide, i) => (
         <div
           key={slide.src}
-          className="absolute inset-0 transition-opacity duration-700"
+          className="absolute inset-0 transition-opacity duration-400"
           style={{ opacity: i === current ? 1 : 0 }}
         >
           <Image
